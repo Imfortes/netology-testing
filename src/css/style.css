@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: clamp(400px, 50vw, 1000px);
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.container {
+  margin: 1rem 0;
+}
+
+.grid-col {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-col-6 {
+  grid-template-columns: repeat(6, minmax(100px, 1fr));
+}
+
+.d-flex {
+  display: flex;
+}
+
+.gap-3 {
+  gap: 1rem;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+input {
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+img.active {
+  filter: grayscale(0)
+}
